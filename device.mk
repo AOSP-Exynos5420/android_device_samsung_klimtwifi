@@ -29,6 +29,11 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS += \
     device/samsung/klimtwifi/overlay
 
+# Camera Hacks
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.stagefright.legacyencoder=true \
+    media.stagefright.less-secure=true
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.carrier=wifi-only
 

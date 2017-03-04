@@ -21,6 +21,8 @@ include device/samsung/chagall-klimt-common/BoardConfig.mk
 BOARD_CAMERA_FRONT_ROTATION=270
 BOARD_CAMERA_BACK_ROTATION=90
 
+TARGET_HAS_LEGACY_CAMERA_HAL1 := true
+
 # Kernel
 TARGET_KERNEL_CONFIG := cyanogenmod_klimtwifi_defconfig
 
