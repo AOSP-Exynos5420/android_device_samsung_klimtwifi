@@ -14,9 +14,6 @@
 # limitations under the License.
 #
 
-# Sample: This is where we'd set a backup provider if we had one
-# $(call inherit-product, device/sample/products/backup_overlay.mk)
-
 # Get the long list of APNs
 PRODUCT_COPY_FILES += vendor/samsung/chagall-klimt-common/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
@@ -39,6 +36,5 @@ PRODUCT_NAME := aosp_klimtwifi
 PRODUCT_PACKAGES += \
     Launcher3 \
     OneTimeInitializer \
-    Gallery2 \
-    OpenDelta
+    Gallery2
 
