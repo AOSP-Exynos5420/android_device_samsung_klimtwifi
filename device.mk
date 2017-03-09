@@ -16,11 +16,21 @@
 
 $(call inherit-product, device/samsung/chagall-klimt-common/device.mk)
 
+# Audio
 PRODUCT_COPY_FILES += \
-    device/samsung/klimtwifi/configs/audio/audio_policy.conf:system/etc/audio_policy.conf
-
-PRODUCT_COPY_FILES += \
+    device/samsung/klimtwifi/configs/audio/audio_policy.conf:system/etc/audio_policy.conf \
     device/samsung/klimtwifi/configs/audio/mixer_paths.xml:system/etc/mixer_paths.xml
+
+# GPS
+PRODUCT_COPY_FILES += \
+    device/samsung/klimtwifi/configs/gps/gps.conf:system/etc/gps.conf \
+    device/samsung/klimtwifi/configs/gps/gps.xml:system/etc/gps.xml
+
+# Wifi
+PRODUCT_COPY_FILES += \
+    device/samsung/klimtwifi/configs/wifi/wpa_supplicant.conf:system/etc/wpa_supplicant.conf \
+    device/samsung/klimtwifi/configs/wifi/wpa_supplicant_overlay.conf:system/etc/wpa_supplicant_overlay.conf \
+    device/samsung/klimtwifi/configs/wifi/p2p_supplicant_overlay.conf:system/etc/p2p_supplicant_overlay.conf
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
