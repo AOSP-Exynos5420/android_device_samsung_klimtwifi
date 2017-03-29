@@ -16,6 +16,13 @@
 
 $(call inherit-product, device/samsung/chagall-klimt-common/device.mk)
 
+# This is a tablet
+PRODUCT_CHARACTERISTICS := tablet
+
+# Device uses high-density artwork where available
+PRODUCT_AAPT_CONFIG := normal large xlarge
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
+
 # Audio
 PRODUCT_COPY_FILES += \
     device/samsung/klimtwifi/configs/audio/audio_policy.conf:system/etc/audio_policy.conf \
